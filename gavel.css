@@ -48,6 +48,14 @@ button, .btn-primary {
   font-weight: 500;
 }
 
+.form-group {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
 button:hover {
   background-color: #444;
 }
