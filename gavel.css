@@ -1,108 +1,91 @@
-/* Import clean font similar to the site */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap');
 
-/* Base layout */
-body {
-  background: #f8f6f3;
-  font-family: "Inter", sans-serif;
-  color: #2b2b2b;
-  line-height: 1.6;
+body, html {
+  font-family: "Inter", sans-serif !important;
+  background: #f8f6f3 !important;
+  color: #2b2b2b !important;
+  line-height: 1.6 !important;
 }
 
-/* Main container */
-.container {
-  max-width: 760px;
-  margin: auto;
-}
-
-/* Header with logo */
-body::before {
+/* Add logo above questionnaire */
+div#gavel-app > div:first-child::before {
   content: "";
   display: block;
   width: 220px;
   height: 80px;
   margin: 40px auto 20px auto;
-  background-image: url("PUT-YOUR-LOGO-URL-HERE");
+  background-image: url("PUT-YOUR-LOGO-URL-HERE") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* Title */
-h1 {
-  font-family: "Libre Baskerville", serif;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Section cards */
-.form-group {
-  background: white;
-  border-radius: 10px;
-  padding: 22px;
-  margin-bottom: 22px;
-  border: 1px solid #e6e3df;
+/* Card layout for questions */
+.gavel-question, .gavel-section {
+  background: #fff !important;
+  border-radius: 10px !important;
+  padding: 22px !important;
+  margin-bottom: 22px !important;
+  border: 1px solid #e6e3df !important;
 }
 
 /* Labels */
-label {
-  font-weight: 500;
-  margin-bottom: 6px;
-  display: block;
+.gavel-question label {
+  font-weight: 500 !important;
+  margin-bottom: 6px !important;
+  display: block !important;
 }
 
 /* Inputs */
-input,
-select,
-textarea {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 12px;
-  font-size: 15px;
-  width: 100%;
-  background: #fff;
+.gavel-question input,
+.gavel-question select,
+.gavel-question textarea {
+  border: 1px solid #ddd !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
+  font-size: 15px !important;
+  width: 100% !important;
+  background: #fff !important;
 }
 
-/* Input focus */
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  border-color: #6b5b4d;
+/* Inputs focus */
+.gavel-question input:focus,
+.gavel-question textarea:focus,
+.gavel-question select:focus {
+  outline: none !important;
+  border-color: #6b5b4d !important;
 }
 
 /* Buttons */
-button,
-.btn-primary {
-  background: #3b342e;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  border: none;
-  font-weight: 500;
-  letter-spacing: .02em;
+.gavel-btn-primary, .gavel-submit-button, button {
+  background: #3b342e !important;
+  color: white !important;
+  padding: 12px 20px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  font-weight: 500 !important;
+  letter-spacing: .02em !important;
 }
 
-/* Button hover */
-button:hover {
-  background: #51473f;
+/* Hover for buttons */
+.gavel-btn-primary:hover, .gavel-submit-button:hover, button:hover {
+  background: #51473f !important;
 }
 
 /* Secondary buttons */
-.btn-secondary {
-  background: transparent;
-  border: 1px solid #ccc;
-  color: #333;
+.gavel-btn-secondary {
+  background: transparent !important;
+  border: 1px solid #ccc !important;
+  color: #333 !important;
 }
 
 /* Progress bar */
-.progress-bar {
-  background: #3b342e;
+.gavel-progress-bar {
+  background: #3b342e !important;
 }
-
-/* Progress background */
-.progress {
-  background: #e6e3df;
+.gavel-progress-bar-background {
+  background: #e6e3df !important;
 }
 
 /* Footer spacing */
